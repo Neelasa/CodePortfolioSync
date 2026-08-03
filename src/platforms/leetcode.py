@@ -2,8 +2,9 @@ import json
 import os
 import requests
 
+from src.platforms.platform import CodingPlatform
 
-class LeetCode:
+class LeetCode(CodingPlatform):
 
     def __init__(self, username):
         self.username = username
@@ -36,11 +37,17 @@ class LeetCode:
             }
         )
 
+        if response.status_code != 200:
+            print("Failed to fetch LeetCode profile.")
+            return None
+
         data = response.json()
 
         os.makedirs("reports", exist_ok=True)
 
         with open("reports/leetcode.json", "w", encoding="utf-8") as file:
             json.dump(data, file, indent=4)
+
+        print("LeetCode data saved successfully.")
 
         return data

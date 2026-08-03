@@ -1,16 +1,12 @@
-from src.leetcode import LeetCode
-from src.report import ReportGenerator
-from config.settings import LEETCODE_USERNAME
+from src.core.sync import PortfolioSync
+from src.core.report import ReportGenerator
 
 
 def main():
 
-    print("=" * 60)
-    print("🚀 CodePortfolioSync")
-    print("=" * 60)
+    sync = PortfolioSync()
 
-    lc = LeetCode(LEETCODE_USERNAME)
-    lc.fetch()
+    sync.run()
 
     report = ReportGenerator()
     report.generate()
