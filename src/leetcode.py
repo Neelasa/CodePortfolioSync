@@ -1,5 +1,7 @@
-import requests
+import json
 import os
+import requests
+
 
 class LeetCode:
 
@@ -24,15 +26,13 @@ class LeetCode:
         }
         """
 
-        variables = {
-            "username": self.username
-        }
-
         response = requests.post(
             url,
             json={
                 "query": query,
-                "variables": variables
+                "variables": {
+                    "username": self.username
+                }
             }
         )
 
@@ -40,8 +40,7 @@ class LeetCode:
 
         os.makedirs("reports", exist_ok=True)
 
-        with open("reports/leetcode.json", "w") as file:
-            import json
+        with open("reports/leetcode.json", "w", encoding="utf-8") as file:
             json.dump(data, file, indent=4)
 
-        print("LeetCode data saved successfully.")
+        return data
