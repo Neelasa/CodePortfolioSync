@@ -6,6 +6,8 @@ Author: Beesu Naga Durga Neelasa
 """
 
 import datetime
+from src.sync import PortfolioSync
+
 
 def main():
     print("=" * 60)
@@ -23,6 +25,15 @@ def main():
     print("   • Codolio")
     print("Started At          :", datetime.datetime.now())
     print("=" * 60)
+
+    print("\nStarting synchronization...\n")
+
+    sync = PortfolioSync()
+    sync.sync()
+
+    print("\nSynchronization completed successfully!")
+    print("=" * 60)
+
 
 if __name__ == "__main__":
     main()
