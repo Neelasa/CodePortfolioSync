@@ -1,0 +1,27 @@
+{
+    "data": {
+        "matchedUser": {
+            "username": "Neelasa",
+            "submitStats": {
+                "acSubmissionNum": [
+                    {
+                        "difficulty": "All",
+                        "count": 206
+                    },
+                    {
+                        "difficulty": "Easy",
+                        "count": 100
+                    },
+                    {
+                        "difficulty": "Medium",
+                        "count": 95
+                    },
+                    {
+                        "difficulty": "Hard",
+                        "count": 11
+                    }
+                ]
+            }
+        }
+    }
+}
