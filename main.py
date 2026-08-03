@@ -5,33 +5,20 @@ Developer Portfolio Automation Framework
 Author: Beesu Naga Durga Neelasa
 """
 
-import datetime
 from src.sync import PortfolioSync
+import datetime
 
 
 def main():
     print("=" * 60)
     print("🚀 CodePortfolioSync")
     print("=" * 60)
-    print("Status              : Active")
-    print("Framework           : Initialized")
-    print("GitHub Actions      : Connected")
-    print("Supported Platforms :")
-    print("   • CodeChef")
-    print("   • LeetCode")
-    print("   • GeeksforGeeks")
-    print("   • HackerRank")
-    print("   • Code360")
-    print("   • Codolio")
-    print("Started At          :", datetime.datetime.now())
-    print("=" * 60)
+    print(f"Started : {datetime.datetime.now()}")
+    print()
 
-    print("\nStarting synchronization...\n")
+    PortfolioSync().sync()
 
-    sync = PortfolioSync()
-    sync.sync()
-
-    print("\nSynchronization completed successfully!")
+    print("\nFramework execution completed.")
     print("=" * 60)
 
 
