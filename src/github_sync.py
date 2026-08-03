@@ -1,9 +1,8 @@
 """
-Module: leetcode.py
-CodePortfolioSync
-Author: Beesu Naga Durga Neelasa
+GitHub Synchronization Module
 """
 
-class Github_syncSync:
-    def fetch(self):
-        print("Fetching Github_sync profile...")
+class GitHubSync:
+
+    def push(self):
+        print("Pushing latest updates to GitHub...")
