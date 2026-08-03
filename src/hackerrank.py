@@ -1,9 +1,8 @@
 """
-Module: leetcode.py
-CodePortfolioSync
-Author: Beesu Naga Durga Neelasa
+HackerRank Handler
 """
 
-class HackerRankSync:
+class HackerRank:
+
     def fetch(self):
-        print("Fetching HackerRank profile...")
+        print("Fetching HackerRank submissions...")
