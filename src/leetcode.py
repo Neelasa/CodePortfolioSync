@@ -1,10 +1,8 @@
-
 """
-Module: leetcode.py
-CodePortfolioSync
-Author: Beesu Naga Durga Neelasa
+LeetCode Handler
 """
 
-class LeetCodeSync:
+class LeetCode:
+
     def fetch(self):
-        print("Fetching LeetCode profile...")
+        print("Fetching LeetCode submissions...")
