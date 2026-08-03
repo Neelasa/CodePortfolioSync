@@ -1,0 +1,11 @@
+CODECHEF_USERNAME = "u23a81a4304"
+
+LEETCODE_USERNAME = "Neelasa"
+
+GFG_USERNAME = "nagadurganeelasa"
+
+HACKERRANK_USERNAME = "nagadurganeelas1"
+
+CODE360_USERNAME = "neelasa"
+
+CODOLIO_USERNAME = "Neelasa"
