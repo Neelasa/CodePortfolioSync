@@ -1,5 +1,5 @@
 import requests
-
+import os
 
 class LeetCode:
 
@@ -36,4 +36,12 @@ class LeetCode:
             }
         )
 
-        print(response.json())
+        data = response.json()
+
+        os.makedirs("reports", exist_ok=True)
+
+        with open("reports/leetcode.json", "w") as file:
+            import json
+            json.dump(data, file, indent=4)
+
+        print("LeetCode data saved successfully.")
