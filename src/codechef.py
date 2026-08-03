@@ -1,9 +1,8 @@
 """
-Module: leetcode.py
-CodePortfolioSync
-Author: Beesu Naga Durga Neelasa
+CodeChef Handler
 """
 
-class CodeChefSync:
+class CodeChef:
+
     def fetch(self):
-        print("Fetching CodeChef profile...")
+        print("Fetching CodeChef submissions...")
