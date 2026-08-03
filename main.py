@@ -1,25 +1,12 @@
-"""
-CodePortfolioSync
-Developer Portfolio Automation Framework
-
-Author: Beesu Naga Durga Neelasa
-"""
-
-from src.sync import PortfolioSync
-import datetime
+from src.leetcode import LeetCode
+from config.settings import LEETCODE_USERNAME
 
 
 def main():
-    print("=" * 60)
-    print("🚀 CodePortfolioSync")
-    print("=" * 60)
-    print(f"Started : {datetime.datetime.now()}")
-    print()
 
-    PortfolioSync().sync()
+    lc = LeetCode(LEETCODE_USERNAME)
 
-    print("\nFramework execution completed.")
-    print("=" * 60)
+    lc.fetch()
 
 
 if __name__ == "__main__":
