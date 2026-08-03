@@ -1,9 +1,8 @@
 """
-Module: leetcode.py
-CodePortfolioSync
-Author: Beesu Naga Durga Neelasa
+GeeksforGeeks Handler
 """
 
-class GeekforGeekSync:
+class GeeksForGeeks:
+
     def fetch(self):
-        print("Fetching GeekforGeek profile...")
+        print("Fetching GeeksforGeeks submissions...")
