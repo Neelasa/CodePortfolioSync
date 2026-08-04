@@ -6,10 +6,18 @@ Coordinates data collection from all supported coding platforms.
 
 from src.platforms.leetcode import LeetCode
 from src.platforms.codechef import CodeChef
+from src.platforms.gfg import GeeksForGeeks
+from src.platforms.hackerrank import HackerRank
+from src.platforms.code360 import Code360
+from src.platforms.codolio import Codolio
 
 from config.settings import (
     LEETCODE_USERNAME,
-    CODECHEF_USERNAME
+    CODECHEF_USERNAME,
+    GFG_USERNAME,
+    HACKERRANK_USERNAME,
+    CODE360_USERNAME,
+    CODOLIO_USERNAME
 )
 
 
@@ -19,7 +27,11 @@ class PortfolioSync:
 
         self.platforms = [
             LeetCode(LEETCODE_USERNAME),
-            CodeChef(CODECHEF_USERNAME)
+            CodeChef(CODECHEF_USERNAME),
+            GeeksForGeeks(GFG_USERNAME),
+            HackerRank(HACKERRANK_USERNAME),
+            Code360(CODE360_USERNAME),
+            Codolio(CODOLIO_USERNAME)
         ]
 
     def run(self):
